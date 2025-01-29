@@ -1,5 +1,8 @@
 #include<iostream>
+#include<string>
 using namespace std;
 int main(){
-    cout<<"Hello world"<<endl;
+   string str="HEllo  jsbfhsdbcjs  kbdkbfbsd jdsbbksdkcv";
+   cout<<str<<endl;
+
 }
