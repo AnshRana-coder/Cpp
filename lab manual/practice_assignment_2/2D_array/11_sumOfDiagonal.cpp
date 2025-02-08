@@ -12,17 +12,19 @@ int main(){
    int sum=0;
    for(i=0;i<3;i++){
       for(j=0;j<3;j++){
-         sum=sum+arr[i][j];
-         arr2[i]=sum;
-
+         if(i==j){
+            sum=sum+arr[i][j];
+         }
       }
-      sum=0;
    }
-   int max=arr2[0];
+   cout<<"sum of primary diagonal element "<<sum<<endl;
+   sum=0;
    for(i=0;i<3;i++){
-      if(arr2[i]>max){
-         max=arr2[i];
+      for(j=0;j<3;j++){
+         if((i+j)==2){
+            sum=sum+arr[i][j];
+         }
       }
    }
-   cout<<"max sum of row"<<max<<endl;
+   cout<<"sum of secondary diagonal element "<<sum<<endl;
 }
